@@ -49,6 +49,43 @@ function taxtabletalk_enqueue_style_sheet() {
 }
 
 /**
+ * Register block styles.
+ *
+ * @since 0.9.2
+ */
+function taxtbt_register_block_styles() {
+
+	$block_styles = array(
+		'core/group'           => array(
+			'shadow'       => __( 'Shadow', 'taxtabletalk' ),
+			'shadow-solid' => __( 'Shadow Solid', 'taxtabletalk' ),
+		),
+		'core/list'            => array(
+			'no-disc' => __( 'No Disc', 'taxtabletalk' ),
+		),
+		'core/navigation-link' => array(
+			'outline' => __( 'Outline', 'taxtabletalk' ),
+		),
+		'core/social-links' => array(
+			'outline' => __( 'Outline', 'taxtabletalk' ),
+		),
+	);
+
+	foreach ( $block_styles as $block => $styles ) {
+		foreach ( $styles as $style_name => $style_label ) {
+			register_block_style(
+				$block,
+				array(
+					'name'  => $style_name,
+					'label' => $style_label,
+				)
+			);
+		}
+	}
+}
+add_action( 'init', 'taxtbt_register_block_styles' );
+
+/**
  * Load custom post type and other included php
  */
 
