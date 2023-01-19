@@ -14,3 +14,14 @@ Template:
 Text Domain: taxtabletalk
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks
 */
+
+/* 
+Style Block STyles
+*/
+.wp-block-social-links.is-style-outline .wp-social-link a {
+    padding-left: .66667em;
+    padding-right: .66667em;
+}
+.wp-block-social-link {
+    border-radius: 0 !important;
+}
