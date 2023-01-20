@@ -35,6 +35,14 @@
 		"color": {
 			"custom": true,
 			"customGradient": true,
+			"gradients": [
+				{
+					"color": "#000",
+					"gradient": "linear-gradient(235deg,rgb(255,255,255) 44%,rgb(238,238,238) 44%)",
+					"name": "White/Neutral",
+					"slug": "custom-white-neutral"
+				}
+			],
 			"palette": [
 				{
 					"color": "#ffffff",
@@ -246,7 +254,7 @@
 				"typography": {
 					"fontFamily": "var:preset|font-family|josefin-sans",
 					"fontSize": "18px",
-					"lineHeight": 1.6000000000000001,
+					"lineHeight": "1.6",
 					"textTransform": "uppercase"
 				}
 			},

@@ -25,3 +25,43 @@ Style Block STyles
 .wp-block-social-link {
     border-radius: 0 !important;
 }
+.is-style-outline-border {
+    border: solid 2px;
+    width: max-content;
+    padding: 8px 12px;
+}
+.is-style-shadow-solid {
+    box-shadow: 0 2px 0px 2px var(--wp--preset--color--custom-primary);
+}
+/*Misc Block Styles*/
+.wp-block-button__link {
+display: flex !important;;
+align-items: center;
+}
+.wp-block-button__link svg {
+width: 24px;
+margin-right: 10px;
+}
+.wp-block-button__link svg path {
+fill: inherit;
+}
+.is-iheart .wp-block-button__link svg {
+    width: 120px;
+    margin-right: 10px;
+    }
+
+/*
+These appearance
+*/
+.wp-block-post.podcast.type-podcast { /* Sets column to equal height*/
+    display: grid;
+    min-height: 100%; 
+}
+.has-negative-top-margin {
+    margin-block-start: -6% !important;
+    z-index: 10;
+    position: relative;
+}
+.wp-site-blocks > * + * { /* Reoves space between header and content*/
+    margin-block-start: 0;
+}
