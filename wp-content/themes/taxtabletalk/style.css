@@ -18,9 +18,13 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 /* 
 Style Block STyles
 */
-.wp-block-social-links.is-style-outline .wp-social-link a {
-    padding-left: .66667em;
-    padding-right: .66667em;
+.has-normal-icon-size.wp-block-social-links.is-style-outline .wp-social-link a {
+    padding: 12px;
+    font-size: var(--wp--preset--font-size--medium)
+}
+.is-style-outline a {
+    border: 2px solid black;
+    border-bottom: 2px solid black !important;
 }
 .wp-block-social-link {
     border-radius: 0 !important;
@@ -56,9 +60,10 @@ fill: inherit;
 /*
 These appearance
 */
-.wp-block-post.podcast.type-podcast { /* Sets column to equal height*/
+.wp-block-post.podcast.type-podcast, .wp-block-post.post.type-post { /* Sets column to equal height*/
     display: grid;
     min-height: 100%; 
+    align-items: stretch;
 }
 .has-negative-top-margin {
     top: -99px !important;
@@ -94,4 +99,20 @@ These appearance
 }
 #wpadminbar .is-sticky-part {
     top: 35px;
+}
+.single-post-tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.single-post-tag a {
+    padding: 12px 20px;
+    background: var(--wp--preset--color--custom-neutral);
+    color: var(--wp--preset--color--custom-contrast);
+}
+.single-post-tag .wp-block-post-terms__separator {
+    display: none;
 }
