@@ -33,6 +33,9 @@ Style Block STyles
 .is-style-shadow-solid {
     box-shadow: 0 2px 0px 2px var(--wp--preset--color--custom-primary);
 }
+.is-style-shadow {
+    box-shadow: 0 30px 50px 0 rgb(1 1 1 / 15%);
+}
 /*Misc Block Styles*/
 .wp-block-button__link {
 display: flex !important;;
@@ -58,10 +61,37 @@ These appearance
     min-height: 100%; 
 }
 .has-negative-top-margin {
-    margin-block-start: -6% !important;
-    z-index: 10;
+    top: -99px !important;
+    z-index: 999;
     position: relative;
 }
 .wp-site-blocks > * + * { /* Reoves space between header and content*/
     margin-block-start: 0;
+}
+.has-position-relative {
+    position: relative;
+    
+}
+.has-position-fixed {
+    position: fixed;
+}
+
+.is-page-cover {
+    min-height: 85vh;
+}
+.is-page-cover-content {
+    min-height: 85vh;
+    position: fixed;
+    width: 100%;
+}
+.is-page-content-fake-bg {
+    position: relative;
+    z-index: 9000;
+}
+.is-sticky-part {
+    position: sticky;
+    top: 0;
+}
+#wpadminbar .is-sticky-part {
+    top: 35px;
 }
