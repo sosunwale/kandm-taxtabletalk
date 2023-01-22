@@ -67,7 +67,7 @@ function taxtbt_register_block_styles() {
 			'outline' => __( 'Outline', 'taxtabletalk' ),
 		),
 		'core/social-links' => array(
-			'outline' => __( 'Outline', 'taxtabletalk' ),
+			'social-outline' => __( 'Outline', 'taxtabletalk' ),
 		),
 		'core/heading' => array(
 			'outline-border' => __( 'With Border', 'taxtabletalk' ),

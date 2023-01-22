@@ -18,18 +18,18 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 /* 
 Style Block STyles
 */
-.has-normal-icon-size.wp-block-social-links.is-style-outline .wp-social-link a {
+.has-normal-icon-size.wp-block-social-links.is-style-social-outline .wp-social-link a {
     padding: 12px;
     font-size: var(--wp--preset--font-size--medium)
 }
-.is-style-outline a {
+.is-style-social-outline a {
     border: 2px solid black;
     border-bottom: 2px solid black !important;
 }
 .wp-block-social-link {
     border-radius: 0 !important;
 }
-.is-style-outline-border {
+.is-style-social-outline-border {
     border: solid 2px;
     width: max-content;
     padding: 8px 12px;
@@ -95,7 +95,7 @@ These appearance
 }
 .is-sticky-part {
     position: sticky;
-    top: 0;
+    top: calc(0px + var(--wp-admin--admin-bar--height, 0px));;
 }
 #wpadminbar .is-sticky-part {
     top: 35px;
@@ -116,3 +116,7 @@ These appearance
 .single-post-tag .wp-block-post-terms__separator {
     display: none;
 }
+.social-share-buttons .wp-block-button__link svg {
+    width: 12px;
+    margin-right: 10px;
+    }
