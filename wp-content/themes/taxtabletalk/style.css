@@ -29,7 +29,7 @@ Style Block STyles
 .wp-block-social-link {
     border-radius: 0 !important;
 }
-.is-style-social-outline-border {
+.is-style-outline-border {
     border: solid 2px;
     width: max-content;
     padding: 8px 12px;
@@ -50,7 +50,8 @@ width: 24px;
 margin-right: 10px;
 }
 .wp-block-button__link svg path {
-fill: inherit;
+fill: currentColor;
+color: currentColor;
 }
 .is-iheart .wp-block-button__link svg {
     width: 120px;
@@ -120,3 +121,22 @@ These appearance
     width: 12px;
     margin-right: 10px;
     }
+.max-width-30 {
+    max-width: 30%;
+}
+.max-width-50 {
+    max-width: 50%;
+}
+/*
+Block Styling
+*/
+/*Social Share*/
+.is-social-share-button .wp-block-button__link{
+    font-size: clamp(10px, 0.475rem + ((1vw - 7.68px) * 0.481), 12px);
+    }
+.is-social-share-button .wp-block-button__link a, .is-social-share-button{
+    transition: transform .1s ease;
+}
+.is-social-share-button:hover{ 
+transform: scale(1.1);
+}
