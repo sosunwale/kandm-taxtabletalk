@@ -54,12 +54,12 @@ fill: currentColor;
 color: currentColor;
 }
 .is-iheart .wp-block-button__link svg {
-    width: 120px;
-    margin-right: 10px;
+    width: 100px;
+    margin-right: 0;
     }
 
 /*
-These appearance
+Theme appearance
 */
 .wp-block-post.podcast.type-podcast, .wp-block-post.post.type-post { /* Sets column to equal height*/
     display: grid;
@@ -139,4 +139,12 @@ Block Styling
 }
 .is-social-share-button:hover{ 
 transform: scale(1.1);
+}
+
+/* Podcast Buttons */
+.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color) svg#screenshot-7f953290-8508-805f-8001-e77ed1fa557d, .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color) svg#apple-podcast  {
+    /*
+    -webkit-filter: invert(100%);
+    filter: invert(100%); 
+    */
 }

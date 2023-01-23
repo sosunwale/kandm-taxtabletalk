@@ -95,3 +95,4 @@ add_action( 'init', 'taxtbt_register_block_styles' );
  //include_once  __DIR__ . '/vendor/meta-box/meta-box/meta-box.php';  //when used in a plugin
  include_once  __DIR__ . '/inc/taxtbt-podcast-cpt.php';
  include_once  __DIR__ . '/inc/block-patterns.php'; 
+ include_once  __DIR__ . '/inc/custom-blocks.php';

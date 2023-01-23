@@ -58,3 +58,45 @@ function taxtbt_register_podcast_pt() {
 	register_post_type( 'podcast', $args );
 }
 
+/**
+ * Add custom metabox and url fields for podcast link buttons
+ */
+
+ function taxtbt_register_podcastlink_metabox() {
+    add_meta_box( 'taxtbt-1', __( 'Podcast Links', 'taxtabletalk' ), 'taxtbt_display_podcastlink_metabox_callback', 'podcast' );
+}
+add_action( 'add_meta_boxes', 'taxtbt_register_podcastlink_metabox' );
+
+/**
+ * Meta box display callback.
+ *
+ * @param WP_Post $post Current post object.
+ */
+function taxtbt_display_podcastlink_metabox_callback( $post ) {
+    echo "<h3>Podcast form Links</h3>";
+	include  __DIR__ . '/podcast-link-form.php'; //Loads the form php file from the same folder as this one
+}
+
+/**
+ * Save meta box content.
+ *
+ * @param int $post_id Post ID
+ */
+function taxtbt_save_podcast_links( $post_id ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( $parent_id = wp_is_post_revision( $post_id ) ) {
+        $post_id = $parent_id;
+    }
+    $fields = [
+        'taxtbt_podcast_applepod',
+        'taxtbt_podcast_iheart',
+        'taxtbt_podcast_youtube',
+		'taxtbt_podcast_facebook',
+    ];
+    foreach ( $fields as $field ) {
+        if ( array_key_exists( $field, $_POST ) ) {
+            update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
+        }
+     }
+}
+add_action( 'save_post', 'taxtbt_save_podcast_links' );
