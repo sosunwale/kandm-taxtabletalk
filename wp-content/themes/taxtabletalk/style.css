@@ -67,7 +67,7 @@ Theme appearance
     align-items: stretch;
 }
 .has-negative-top-margin {
-    top: -99px !important;
+    top: -5rem !important;
     z-index: 999;
     position: relative;
 }
@@ -147,4 +147,66 @@ transform: scale(1.1);
     -webkit-filter: invert(100%);
     filter: invert(100%); 
     */
+}
+/*
+Fluent Forms and site forms
+*/
+.fluentform {
+    font-family: 'Josefin Sans';
+}
+.fluentform .ff-el-form-control {
+    border: 2px solid var(--wp--preset--color--custom-neutral);
+    border-radius: 0;
+    color: var(--wp--preset--color--custom-contrast);
+    display: block;
+    font-size: var(--wp--preset--font-size--medium);
+    line-height: 1.5;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding: 12px 16px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+}
+.fluentform .ff_btn_style {
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--wp--preset--font-size--medium);
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 12px 18px;
+
+}
+form.fluent_form_1 .ff-btn-submit, button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style {
+    background-color: var(--wp--preset--color--custom-primary);
+    color: var(--wp--preset--color--custom-base);
+}
+/*
+Responsiveness: v.small Mobile Only
+*/
+@media (max-width: 432px) {
+    .has-negative-top-margin {
+    top: -3rem !important;
+    }
+    .max-width-30 {
+        max-width: 100%;
+    }
+    .max-width-50 {
+        max-width: 100%;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/*
+Responsiveness: v.large Desktop Only
+*/
+@media (min-width: 1642px) {
+    .signup-cta-group {
+        max-width: var(--wp--style--global--wide-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
