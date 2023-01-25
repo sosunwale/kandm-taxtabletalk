@@ -1,0 +1,115 @@
+/*
+.modal-trigger.center-center, .modal-trigger.center-left, .modal-trigger.center-right, .modal-trigger.top-center, .modal-trigger.bottom-center, .modal-trigger.top-left, .modal-trigger.top-right, .modal-trigger.bottom-left, .modal-trigger.bottom-right {
+    position: absolute;
+}
+*/
+.modal-content {
+    position: fixed;
+    z-index: 9998;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    visibility: hidden; 
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    
+}
+.modal-content-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0;
+    visibility: hidden; */
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    margin-inline-start: 5px;
+}
+.modal-trigger {
+    z-index: 9999;
+}
+.center-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-left {
+    top: 50%;
+    left: 20px;
+}
+.center-right {
+    top: 50%;
+    right: 20px;
+}
+.top-left {
+    top: 35px;
+    left: 20px;
+}
+.top-right {
+    top: 35px;
+    right: 20px;
+}
+.bottom-left {
+    left: 20px;
+    bottom: 35px;
+}
+.bottom-right {
+    right: 20px;
+    bottom: 35px;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: var(--wp--preset--color--custom-neutral);
+}
+
+.close-button:hover {
+    background-color: var(--wp--preset--color--custom-accent-text);
+}
+/*
+Responsiveness: v.small Mobile Only
+*/
+@media (max-width: 432px) {
+    .center-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .center-left {
+        top: 50%;
+        left: 5px;
+    }
+    .center-right {
+        top: 50%;
+        right: 5px;
+    }
+    .top-left {
+        top: 35px;
+        left: 5px;
+    }
+    .top-right {
+        top: 35px;
+        right: 5px;
+    }
+    .bottom-left {
+        left: 5px;
+        bottom: 35px;
+    }
+    .bottom-right {
+        right: 5px;
+        bottom: 35px;
+    }
+}

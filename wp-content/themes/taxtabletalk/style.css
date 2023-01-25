@@ -148,6 +148,16 @@ transform: scale(1.1);
     filter: invert(100%); 
     */
 }
+/* Modal Popup*/
+.is-modal-button-justification-center {
+    justify-content: center;
+}
+.is-modal-button-justification-right {
+    justify-content: flex-end;
+}
+.is-modal-button-justification-left {
+    justify-content: flex-start;
+}
 /*
 Fluent Forms and site forms
 */
