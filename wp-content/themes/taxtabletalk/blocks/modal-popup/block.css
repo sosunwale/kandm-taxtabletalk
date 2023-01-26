@@ -60,11 +60,11 @@
 }
 .bottom-left {
     left: 20px;
-    bottom: 35px;
+    bottom: 5rem;
 }
 .bottom-right {
     right: 20px;
-    bottom: 35px;
+    bottom: 5rem;
 }
 .close-button {
     float: right;

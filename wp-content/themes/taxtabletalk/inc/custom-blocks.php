@@ -191,6 +191,45 @@ function add_podcast_link_buttons_block() {
             ), 
         ) 
     );
+
+    //Google Podcast
+
+    add_block(
+        'single-podcast-googlepod-link', 
+        array( 
+            'title'    => 'Google Podcast', 
+            'category' => 'widget', 
+            'icon'     => 'scatter_plot', 
+            'keywords' => array( 'share', 'social', 'twitter' ), 
+            'fields'   => array( 
+                'button-open-in-newtab' => array( 
+                    'label'   => 'Open in new tab', 
+                    'control' => 'toggle', 
+                    'location' => 'inspector',
+                    'width'   => '100', 
+                ),
+                'button-color' => array( 
+                    'label'   => 'Color', 
+                    'control' => 'color', 
+                    'location' => 'inspector',
+                    'width'   => '100', 
+                    'default' => 'inherit',
+                ),
+                'button-font' => array( 
+                    'label'   => 'Font Size', 
+                    'control' => 'select', 
+                    'location' => 'inspector',
+                    'options' => [
+                        ['value' => 'has-small-font-size','label' =>'Small'],
+                        ['value' => 'has-medium-font-size','label' =>'Medium'],
+                        ['value' => 'has-large-font-size','label' =>'Large'],
+                    ],
+                    'width'   => '100',
+                    'type'     => 'string', 
+                ),
+            ), 
+        ) 
+    );
 }
 add_action( 'genesis_custom_blocks_add_blocks', 'add_podcast_link_buttons_block' );
 

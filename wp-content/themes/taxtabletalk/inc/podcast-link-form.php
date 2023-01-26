@@ -20,6 +20,10 @@
         <input id="taxtbt_podcast_iheart" type="url" name="taxtbt_podcast_iheart" value="<?php echo esc_attr( get_post_meta( get_the_ID(), 'taxtbt_podcast_iheart', true ) ); ?>">
     </p>
     <p class="meta-options taxtbt_field">
+        <label for="taxtbt_podcast_google_pod">Google Podcast</label>
+        <input id="taxtbt_podcast_google_pod" type="url" name="taxtbt_podcast_google_pod" value="<?php echo esc_attr( get_post_meta( get_the_ID(), 'taxtbt_podcast_google_pod', true ) ); ?>">
+    </p>
+    <p class="meta-options taxtbt_field">
         <label for="taxtbt_podcast_youtube">Youtube</label>
         <input id="taxtbt_podcast_youtube" type="url" name="taxtbt_podcast_youtube" value="<?php echo esc_attr( get_post_meta( get_the_ID(), 'taxtbt_podcast_youtube', true ) ); ?>">
     </p>

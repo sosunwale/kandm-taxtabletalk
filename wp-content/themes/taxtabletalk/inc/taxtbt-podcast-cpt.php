@@ -92,6 +92,7 @@ function taxtbt_save_podcast_links( $post_id ) {
         'taxtbt_podcast_iheart',
         'taxtbt_podcast_youtube',
 		'taxtbt_podcast_facebook',
+		'taxtbt_podcast_google_pod',
     ];
     foreach ( $fields as $field ) {
         if ( array_key_exists( $field, $_POST ) ) {

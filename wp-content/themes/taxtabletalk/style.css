@@ -192,13 +192,22 @@ form.fluent_form_1 .ff-btn-submit, button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_
     background-color: var(--wp--preset--color--custom-primary);
     color: var(--wp--preset--color--custom-base);
 }
+.fluent_form_5 .ff-btn-submit {
+    background: var(--wp--preset--color--custom-secondary) !important;
+    border: none;
+    box-shadow: none;
+}
 /*
 Responsiveness: v.small Mobile Only
 */
 @media (max-width: 432px) {
     .has-negative-top-margin {
-    top: -3rem !important;
+    top: -1.5rem !important;
     }
+    .wp-block-button__link svg {
+        width: 20px;
+        margin-right: 6px;
+        }
     .max-width-30 {
         max-width: 100%;
     }
