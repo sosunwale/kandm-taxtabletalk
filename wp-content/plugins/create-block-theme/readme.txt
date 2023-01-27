@@ -4,7 +4,7 @@ Donate link: https://automattic.com/
 Tags: themes, theme, block-theme
 Requires at least: 6.0
 Tested up to: 6.1
-Stable tag: 1.3.9
+Stable tag: 1.3.10
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,18 +36,18 @@ Still in the WordPress dashboard, navigate to "Appearance" -> "Create Block Them
 
 == Changelog ==
 
+= 1.3.10 =
+* Remove font face: avoid unwanted removal of  fontfamily.
+* Add missing spaces to option labels
+
 = 1.3.9 =
 * Updating Tested up to: 6.1
-* Merge branch 'trunk' into fix/139
 * I18N: Some new UI strings are not translatable
 * Replace "current theme" with "active theme" (or "currently active theme")
-* Update Google Fonts JSON data from API
 * Improve translation process by removing trailing spaces
-* Merge branch 'add/remove-font-files-from-theme' of github.com:WordPress/create-block-theme into add/remove-font-files-from-theme
 * Fonts: remove font files from theme assets folder if the font face/family is removed.
 * Refactor to read raw theme.json data instead of using core methods
 * Update Google Fonts JSON data from API
-* Revert "Version bump & changelog update"
 
 = 1.3.8 =
 * Fixes the spelling of definition
