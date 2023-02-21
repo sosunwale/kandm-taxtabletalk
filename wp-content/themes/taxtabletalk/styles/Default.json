@@ -1,0 +1,360 @@
+{
+	"customTemplates": [
+		{
+			"name": "blank",
+			"postTypes": [
+				"page",
+				"post"
+			],
+			"title": "Blank"
+		},
+		{
+			"name": "single-post",
+			"postTypes": [
+				"post"
+			],
+			"title": "Single Post"
+		},
+		{
+			"name": "page-fullwidth",
+			"postTypes": [
+				"page"
+			],
+			"title": "FullWidth"
+		},
+		{
+			"name": "single-podcast",
+			"postTypes": [
+				"podcast"
+			],
+			"title": "Single Podcast"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"custom": true,
+			"customGradient": true,
+			"gradients": [
+				{
+					"color": "#000",
+					"gradient": "linear-gradient(235deg,rgb(255,255,255) 44%,rgb(238,238,238) 44%)",
+					"name": "White/Neutral",
+					"slug": "custom-white-neutral"
+				}
+			],
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "custom-base"
+				},
+				{
+					"color": "#000",
+					"name": "Contrast",
+					"slug": "custom-contrast"
+				},
+				{
+					"color": "#990099",
+					"name": "Primary",
+					"slug": "custom-primary"
+				},
+				{
+					"color": "#0066ff",
+					"name": "Secondary",
+					"slug": "custom-secondary"
+				},
+				{
+					"color": "#009999",
+					"name": "Tertiary",
+					"slug": "custom-tertiary"
+				},
+				{
+					"color": "#eeeeee",
+					"name": "Neutral",
+					"slug": "custom-neutral"
+				},
+				{
+					"color": "#6c6c6c",
+					"name": "Accent Text",
+					"slug": "custom-accent-text"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1120px",
+			"wideSize": "1320px"
+		},
+		"spacing": {
+			"spacingScale": {
+				"steps": 0
+			},
+			"spacingSizes": [
+				{
+					"name": "1",
+					"size": "clamp(1.5rem, 5vw, 2rem)",
+					"slug": "30"
+				},
+				{
+					"name": "2",
+					"size": "clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)",
+					"slug": "40"
+				},
+				{
+					"name": "3",
+					"size": "clamp(2.5rem, 8vw, 4.5rem)",
+					"slug": "50"
+				},
+				{
+					"name": "4",
+					"size": "clamp(3.75rem, 10vw, 7rem)",
+					"slug": "60"
+				},
+				{
+					"name": "5",
+					"size": "clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem)",
+					"slug": "70"
+				},
+				{
+					"name": "6",
+					"size": "clamp(7rem, 14vw, 11rem)",
+					"slug": "80"
+				}
+			],
+			"units": [
+				"px",
+				"%",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Josefin Sans",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/josefin-sans_500.ttf"
+							]
+						},
+						{
+							"fontFamily": "Josefin Sans",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/josefin-sans_600.ttf"
+							]
+						},
+						{
+							"fontFamily": "Josefin Sans",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/josefin-sans_500italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Josefin Sans",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/josefin-sans_600italic.ttf"
+							]
+						}
+					],
+					"fontFamily": "Josefin Sans",
+					"slug": "josefin-sans"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Domine",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/domine_regular.ttf"
+							]
+						}
+					],
+					"fontFamily": "Domine",
+					"slug": "domine"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": {
+						"max": "14px",
+						"min": "12px"
+					},
+					"size": "14px",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"max": "16px",
+						"min": "14px"
+					},
+					"size": "16px",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"max": "28px",
+						"min": "26px"
+					},
+					"size": "28px",
+					"slug": "large"
+				},
+				{
+					"fluid": false,
+					"size": "35px",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"max": "4.2rem",
+						"min": "2.2rem"
+					},
+					"size": "4.2rem",
+					"slug": "xx-large"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "0px"
+				},
+				"color": {
+					"background": "var:preset|color|custom-primary",
+					"text": "var:preset|color|custom-base"
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "18px",
+						"left": "24px",
+						"right": "24px",
+						"top": "18px"
+					}
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|josefin-sans",
+					"fontSize": "18px",
+					"lineHeight": "1.6",
+					"textTransform": "uppercase"
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontSize": "var:preset|font-size|xx-large",
+					"lineHeight": "1.1"
+				}
+			},
+			"core/social-link": {
+				"border": {
+					"radius": "0"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|josefin-sans",
+					"textTransform": "uppercase"
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "#990099"
+				},
+				"typography": {
+					"fontFamily": "Josefin Sans",
+					"fontSize": "18px"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "48px"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "35px"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "28px"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "24px"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "18px"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "16px"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "Josefin Sans"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "#000"
+					}
+				},
+				"color": {
+					"text": "var:preset|color|custom-tertiary"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"bottom": "0px",
+				"left": "20px",
+				"right": "20px",
+				"top": "0px"
+			}
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|domine",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": 1.6000000000000001
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.1/theme.json"
+}
