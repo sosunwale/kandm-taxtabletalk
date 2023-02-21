@@ -4,7 +4,7 @@
  * Description:       Display a meta field as a block on frontend, support ACF fields.
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           1.0.9
+ * Version:           1.0.10
  * Author:            Phi Phan
  * Author URI:        https://boldblocks.net
  *
@@ -192,10 +192,38 @@ function meta_field_block_render_acf_field( $value, $post_id, $field ) {
 			$field_value = count( $terms_markup ) > 0 ? '<ul><li>' . implode( '</li><li>', $terms_markup ) . '</li></ul>' : '';
 		}
 	} elseif ( 'user' === $field['type'] ) {
-		if ( is_object( $value ) ) {
-			$field_value = $value->display_name;
-		} elseif ( is_numeric( $value ) ) {
-			$field_value = get_user_meta( $value, 'display_name', true );
+		$user_array = $value;
+		if ( ! ( $field['multiple'] ?? false ) ) {
+			$user_array = [ $value ];
+		}
+
+		$user_array_markup = array_filter(
+			array_map(
+				function ( $user ) {
+					$user_display_name = '';
+
+					if ( is_object( $user ) ) {
+						$user_display_name = $user->display_name ?? '';
+					} elseif ( is_numeric( $user ) ) {
+						$user_display_name = get_user_meta( $user, 'display_name', true );
+					} elseif ( is_array( $user ) ) {
+						$user_display_name = $user['display_name'] ?? '';
+					}
+
+					return $user_display_name;
+				},
+				$user_array
+			)
+		);
+
+		if ( count( $user_array_markup ) === 0 ) {
+			$field_value = '';
+		} else {
+			if ( count( $user_array_markup ) > 1 ) {
+				$field_value = '<ul><li>' . implode( '</li><li>', $user_array_markup ) . '</li></ul>';
+			} else {
+				$field_value = $user_array_markup[0];
+			}
 		}
 	}
 
