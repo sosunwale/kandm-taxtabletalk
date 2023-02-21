@@ -1,35 +1,4 @@
 {
-	"customTemplates": [
-		{
-			"name": "blank",
-			"postTypes": [
-				"page",
-				"post"
-			],
-			"title": "Blank"
-		},
-		{
-			"name": "single-post",
-			"postTypes": [
-				"post"
-			],
-			"title": "Single Post"
-		},
-		{
-			"name": "page-fullwidth",
-			"postTypes": [
-				"page"
-			],
-			"title": "FullWidth"
-		},
-		{
-			"name": "single-podcast",
-			"postTypes": [
-				"podcast"
-			],
-			"title": "Single Podcast"
-		}
-	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -60,7 +29,7 @@
 					"slug": "custom-primary"
 				},
 				{
-					"color": "#0066ff",
+					"color": "#D0CF05",
 					"name": "Secondary",
 					"slug": "custom-secondary"
 				},
@@ -70,7 +39,7 @@
 					"slug": "custom-tertiary"
 				},
 				{
-					"color": "#eeeeee",
+					"color": "#eee",
 					"name": "Neutral",
 					"slug": "custom-neutral"
 				},
